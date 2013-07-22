@@ -1,4 +1,4 @@
-en:
+es:
   faker:
     address:
       city_prefix: [North, East, West, South, New, Lake, Port]
