@@ -1,0 +1,22 @@
+en:
+  faker:
+    address:
+      city_prefix: [North, East, West, South, New, Lake, Port]
+      city_suffix: [town, ton, land, ville, berg, burgh, borough, bury, view, port, mouth, stad, furt, chester, mouth, fort, haven, side, shire]
+      street_suffix: [Callejón, Avenida, Puente, Arroyo, Campamento, Cañón, Centros, Acantilados, Esquina, Cresta, Valle, Presa, Autopista, Extensión, Campo, Bosque, Fuerte, Autopista, Jardín, Entrada, Cañada, Puerto, Refugio, Isla, Lago, Centro Comercial, Prado, Monte, Montaña, Parque, Pasaje, Camino, Pradera, Río, Carretera, Ruta, Fila, Costa, Calle, Unión, Pueblo, Villa]
+
+    company:
+      suffix: [Inc., e Hijos, S.A. , Corp. ]
+      name:
+        - "#{Name.last_name} #{suffix}"
+        - "#{Name.last_name} y #{Name.last_name} #{suffix}"
+        - "#{Name.last_name}, #{Name.last_name} y #{Name.last_name}"
+    name:
+      last_name: [González, Rodríguez, Gómez, Fernández, López, Díaz, Martínez, Pérez, García, Sánchez, Romero, Sosa, Álvarez, Torres, Ruiz, Ramírez, Flores, Acosta, Benítez, Medina, Suárez, Herrera, Aguirre, Pereyra, Gutiérrez, Giménez, Molina, Silva, Castro, Rojas, Ortíz, Núñez, Luna, Juárez, Cabrera, Ríos, Ferreyra, Godoy, Morales, Domínguez, Moreno, Peralta, Vega, Carrizo, Quiroga, Castillo, Ledesma, Muñoz, Ojeda, Ponce, Vera, Vázquez, Villalba, Cardozo, Navarro, Ramos, Arias, Coronel, Córdoba, Figueroa, Correa, Cáceres, Vargas, Maldonado, Mansilla, Farías, Rivero, Paz, Miranda, Roldán, Méndez, Lucero, Cruz, Hernández, Agüero, Páez, Blanco, Mendoza, Barrios, Escobar, Ávila, Soria, Leiva, Acuña, Martin, Maidana, Moyano, Campos, Olivera, Duarte, Soto, Franco, Bravo, Valdéz, Toledo, Velázquez, Montenegro, Leguizamón, Chávez, Arce, Contreras, Sepúlveda, Fuentes, Araya, Espinoza, Valenzuela, Reyes, Vásquez, Tapia, Carrasco, Cortés, Jara, Vergara, Rivera, Riquelme, Sandoval, Orellana, Zúñiga, Olivares, Alarcón, Gallardo, Ortiz, Garrido, Salazar, Guzmán, Henríquez, Saavedra, Aguilera, Parra, Aravena, Pizarro, Peña, Yáñez, Valdés, Vidal, Salinas, Cárdenas, Jiménez, Lagos, Bustos, Pino, Palma, Sanhueza, Carvajal, Navarrete, Sáez, Alvarado, Donoso, Poblete, Bustamante, Toro, Venegas, Guerrero, Paredes, San Martín, Jurado, Lara, Ascázubi, Montes de Oca, Rual Viel, Mateus, Linares, Bastidas, Cifuentes, Gudiño, Betancur, Dávila, Beltrán, Castañón, Vinueza, Orozco, Buitrón, Landázuri]
+      prefix: [Sr., Sra., Dr.]
+      suffix: [Jr., Sr., I, II, III, IV, V]
+      title:
+        #TODO pending
+        descriptor: [Lead, Senior, Direct, Corporate, Dynamic, Future, Product, National, Regional, District, Central, Global, Customer, Investor, Dynamic, International, Legacy, Forward, Internal, Human, Chief, Principal]
+        level: [Solutions, Program, Brand, Security, Research, Marketing, Directives, Implementation, Integration, Functionality, Response, Paradigm, Tactics, Identity, Markets, Group, Division, Applications, Optimization, Operations, Infrastructure, Intranet, Communications, Web, Branding, Quality, Assurance, Mobility, Accounts, Data, Creative, Configuration, Accountability, Interactions, Factors, Usability, Metrics]
+        job: [Supervisor, Associate, Executive, Liason, Officer, Manager, Engineer, Specialist, Director, Coordinator, Administrator, Architect, Analyst, Designer, Planner, Orchestrator, Technician, Developer, Producer, Consultant, Assistant, Facilitator, Agent, Representative, Strategist]
