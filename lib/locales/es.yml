@@ -3,12 +3,22 @@ es:
     address:
       city_prefix: [North, East, West, South, New, Lake, Port]
       city_suffix: [town, ton, land, ville, berg, burgh, borough, bury, view, port, mouth, stad, furt, chester, mouth, fort, haven, side, shire]
-      street_suffix: [Callejón, Avenida, Puente, Arroyo, Campamento, Cañón, Centros, Acantilados, Esquina, Cresta, Valle, Presa, Autopista, Extensión, Campo, Bosque, Fuerte, Autopista, Jardín, Entrada, Cañada, Puerto, Refugio, Isla, Lago, Centro Comercial, Prado, Monte, Montaña, Parque, Pasaje, Camino, Pradera, Río, Carretera, Ruta, Fila, Costa, Calle, Unión, Pueblo, Villa]
-
+      street_suffix: [Callejón, Avenida, Puente, Arroyo, Campamento, Cañón, Centros, Acantilados, Cresta, Valle, Presa, Autopista, Extensión, Campo, Bosque, Fuerte, Autopista, Jardín, Entrada, Cañada, Puerto, Refugio, Isla, Lago, Centro Comercial, Prado, Monte, Montaña, Parque, Pasaje, Camino, Pradera, Río, Carretera, Ruta, Fila, Costa, Calle, Unión, Pueblo, Villa]
+      street_name:
+        - "#{street_suffix} #{Name.first_name}"
+        - "#{street_suffix} #{Name.last_name}"
+      street_address:
+        - "#{street_name} #{building_number}"
     company:
       suffix: [Inc., e Hijos, S.A. , Corp. ]
       name:
         - "#{Name.last_name} #{suffix}"
+        - "#{Name.last_name} #{suffix}"
+        - "#{Name.last_name} #{Name.first_name} #{suffix}"
+        - "#{Name.last_name} #{Name.first_name} #{suffix}"
+        - "#{Name.last_name} y #{Name.last_name}"
+        - "#{Name.last_name} y #{Name.last_name}"
+        - "#{Name.last_name} y #{Name.last_name} #{suffix}"
         - "#{Name.last_name} y #{Name.last_name} #{suffix}"
         - "#{Name.last_name}, #{Name.last_name} y #{Name.last_name}"
     name:
@@ -20,3 +30,5 @@ es:
         descriptor: [Lead, Senior, Direct, Corporate, Dynamic, Future, Product, National, Regional, District, Central, Global, Customer, Investor, Dynamic, International, Legacy, Forward, Internal, Human, Chief, Principal]
         level: [Solutions, Program, Brand, Security, Research, Marketing, Directives, Implementation, Integration, Functionality, Response, Paradigm, Tactics, Identity, Markets, Group, Division, Applications, Optimization, Operations, Infrastructure, Intranet, Communications, Web, Branding, Quality, Assurance, Mobility, Accounts, Data, Creative, Configuration, Accountability, Interactions, Factors, Usability, Metrics]
         job: [Supervisor, Associate, Executive, Liason, Officer, Manager, Engineer, Specialist, Director, Coordinator, Administrator, Architect, Analyst, Designer, Planner, Orchestrator, Technician, Developer, Producer, Consultant, Assistant, Facilitator, Agent, Representative, Strategist]
+      name:
+        - "#{last_name}, #{first_name}"
